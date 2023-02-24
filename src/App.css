@@ -1,38 +1,475 @@
-.App {
-  text-align: center;
+* {
+  font:  Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 600px)
+{
+  body{
+    /*background-image: url("background1.jpeg");*/
+    background-color: black;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  a{
+    text-decoration: None;
+    color: yellowgreen;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    justify-content: center;
   }
+  /* ErrorPage */
+  .ErrorPage{
+    color: wheat;
+  }
+
+  /* END ErrorPage */
+
+  /* AllClasses Page */
+
+  .AllClasses{
+    margin: auto;
+    background-color:#ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 95%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+  }
+
+  .AllClasses p {
+    color: rgb(46, 35, 194);
+    text-decoration: None;
+    text-align: justify;
+  }
+
+  .AllClasses h1{
+    text-align: center;
+  }
+
+  /* END AllClasses */
+
+  /* HEADER */
+  .Header h1 {
+    color : red;
+    text-align: center;
+  }
+  
+  .Header {
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    border: 5px solid #0077b6;
+    border-radius: .5em;
+  
+  }
+  /* END HEADER */
+
+  /* Partner Page  */
+  .Partner{
+    margin: auto;
+    background-color:#ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+  }
+  
+  .Partner a{
+    background-color: #ffbe0b;
+  }
+  
+  .Parnter p a{
+    color: rgb(46, 35, 194);
+    text-decoration: None;
+    text-align: justify;
+  }
+  
+  .Partner h1{
+    text-align: center;
+  }
+  
+  .Partner p{
+    color: rgb(46, 35, 194);
+  }
+  /* END Partner */
+
+  /* Contact Page  */
+  .Contact{
+    margin: auto;
+    background-color: #ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+  }
+  
+  .Contact a{
+    color: yellowgreen;
+    text-decoration: None;
+  }
+  
+  .Contact h1{
+    text-align: center;
+  }
+  
+  .Contact p{
+    color: rgb(46, 35, 194);
+    text-align: justify;
+  }
+  /* END Contact */
+
+
+  /* WhoAmI Page */
+  .WhoAmI{
+    margin-bottom: 10px;
+    background-color: #ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+  }
+  
+  .WhoAmI h1{
+    text-align: center;
+    color : black;
+  }
+  
+  .WhoAmI p{
+    color : rgb(46, 35, 194);
+    text-align: justify;
+  }
+  
+  /* END WhoAmI */
+
+  /* Cours Page */
+  .Cours{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+  }
+
+  .Cours p{
+    color : rgb(46, 35, 194);
+    text-align: justify;
+  }
+
+  .Cours h1{
+    text-align: center;
+    color : black;
+  }
+  /* END Cours */
+
+  /* Home PAge */
+  .home{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+  }
+  .home p{
+    color : rgb(46, 35, 194);
+    text-align: justify;
+  }
+  /* END Home */
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-container {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+  }
+  
+  .footer-container p {
+    color: var(--white-color);
+    line-height: 19px;
+    margin: 10px 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: justify;
+  }
+  /* END FOOTER */
+}
+
+@media only screen and (min-width: 600px)
+{
+  body{
+    /*background-image: url("background1.jpeg");*/
+    background-color: black;
+    background-origin: content-box;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center
+    
+  }
+  
+  a{
+    text-decoration: None;
+    color: yellowgreen;
+  }
+  
+  .App{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Home Page  */
+  .home{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
+  
+  /* END Home */
+  
+  /* HEADER */
+  .Header h1 {
+    color : red;
+    text-align: center;
+  }
+  
+  .Header {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    border: 5px solid #0077b6;
+    border-radius: .5em;
+  
+  }
+  .Header-link{
+    margin-left: 100px;
+    margin-bottom: 10px;
+    width: 60px;
+    border: 5px solid #0077b6;
+    border-radius: .5em;
+  }
+
+  /* END HEADER */
+  
+  
+  /* Partner Page  */
+  .Partner{
+    margin: 20px;
+    background-color:#ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+  }
+    
+  .Parnter p a{
+    color: rgb(46, 35, 194);
+    text-decoration: None;
+    text-align: justify;
+  }
+  
+  .Partner h1{
+    text-align: center;
+  }
+  
+  .Partner p{
+    color: rgb(46, 35, 194);
+    text-align: justify;
+  }
+  /* END Partner */
+  
+  
+  /* Contact Page  */
+  .Contact{
+    margin: 20px;
+    background-color: #ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+  }
+  
+  .Contact a{
+    color: yellowgreen;
+    text-decoration: None;
+  }
+  
+  .Contact h1{
+    text-align: center;
+  }
+  
+  .Contact p{
+    color: rgb(46, 35, 194);
+    text-align: justify;
+  }
+  /* END Contact */
+  
+  /* Home Page */
+  .home{
+    color : white;
+  }
+  /* END Home */
+  
+  /* WhoAmI Page */
+  .WhoAmI{
+    margin: 20px;
+    background-color: #ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+  }
+  
+  .WhoAmI h1{
+    text-align: center;
+    color : black;
+  }
+  
+  .WhoAmI p{
+    color : rgb(46, 35, 194);
+    text-align: justify;
+  }
+  
+  /* END WhoAmI */
+  
+  /* WELCOME PAGE */
+  .welcomePage {
+    width: 95%;
+    height: 200px;
+    padding: 10px;
+  }
+  
+  
+  .App {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    flex-direction: column;
+    height: 600px;
+  }
+  
+  /* Cours Page*/
+  .Cours{
+    margin: 20px;
+    background-color: #ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  .Cours p{
+    color : rgb(46, 35, 194);
+    text-align: justify;
+  }
+
+  .Cours h1{
+    text-align: center;
+    color : black;
+  }
+
+  /* END Cours */
+
+  /* AllClasses Page */
+
+  .AllClasses{
+    margin: auto;
+    background-color:#ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 90%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+  }
+
+  .AllClasses h1{
+    text-align: center;
+  }
+  .AllClasses p{
+    color: rgb(46, 35, 194);
+    text-decoration: None;
+    background-color: #ffbe0b;
+    text-align: justify;
+  }
+
+  /* FOOTER */
+  footer {
+    justify-content: center;
+    display: inline-block;
+  }
+  
+  .footer-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    color: white;
+    display: inline-block;
+  }
+  
+  .footer-container p {
+    color: var(--white-color);
+    line-height: 19px;
+    margin: 10px 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: justify;
+  }
+  /* END FOOTER */
 }
