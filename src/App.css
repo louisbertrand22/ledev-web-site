@@ -2,6 +2,9 @@
   font:  Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
+.Test{
+  color: white;
+}
 @media only screen and (max-width: 600px)
 {
   body{
@@ -129,6 +132,32 @@
   }
   /* END Contact */
 
+  /* About Page*/
+
+  .About{
+    margin-bottom: 10px;
+    background-color: #ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+  }
+
+  .About h1{
+    text-align: center;
+    color : black;
+  }
+
+  .About p{
+    color : rgb(46, 35, 194);
+    text-align: justify;
+  }
+
+  /* END About*/
 
   /* WhoAmI Page */
   .WhoAmI{
@@ -248,8 +277,7 @@
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
-    display: flex;
+    width: 100%;
     justify-content: center;
   }
   
@@ -355,6 +383,27 @@
     color : white;
   }
   /* END Home */
+  .About{
+    margin-bottom: 10px;
+    background-color: #ffbe0b;
+    border: 5px solid #ffbe0b;
+    box-shadow: 5px 5px 5px red;
+    width: 100%;
+    padding: 10px;
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+  }
+  .About h1{
+    text-align: center;
+    color : black;
+  }
+  .About p{
+    color : rgb(46, 35, 194);
+    text-align: justify;
+  }
+
   
   /* WhoAmI Page */
   .WhoAmI{
@@ -452,6 +501,8 @@
   footer {
     justify-content: center;
     display: inline-block;
+    
+    position: bottom;
   }
   
   .footer-container {
